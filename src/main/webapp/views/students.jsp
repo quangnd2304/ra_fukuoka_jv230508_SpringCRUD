@@ -34,8 +34,8 @@
                 <td><fmt:formatDate pattern="dd/MM/yyyy" value="${student.birthDate}"/></td>
                 <td>${student.status?"Active":"Inactive"}</td>
                 <td>
-                    <a href="<%=request.getContextPath()%>/StudentController?action=initUpdate&&studentId=${student.studentId}">Update</a>
-                    <a href="<%=request.getContextPath()%>/StudentController?action=delete&&studentId=${student.studentId}">Delete</a>
+                    <a href="<%=request.getContextPath()%>/studentController/initUpdate?studentId=${student.studentId}">Update</a>
+                    <a href="<%=request.getContextPath()%>/studentController/delete?studentId=${student.studentId}">Delete</a>
                 </td>
             </tr>
         </c:forEach>
